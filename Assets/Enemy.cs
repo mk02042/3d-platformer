@@ -13,8 +13,8 @@ public class Enemy : MonoBehaviour
         //bdbvjvvqvbdjqbvqjkq
 
         transform.position =
-       Vector3.MoveTowards(transform.position,
-       target.position, speed + Time.deltaTime);
+    Vector3.MoveTowards(transform.position,
+    target.position, speed + Time.deltaTime);
 
         //jdghghjabdamnvb
         transform.LookAt(target.position);

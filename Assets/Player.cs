@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject fireballPrefab;
+    public GameObject fireballprefab;
     public Transform attackPoint;
 
     //здоровие игрока
-    private ind health = 10;
+    private int health = 10;
 
     //метод понижаюший здоровие
-    public void TakeDamage(ind damage){
+    public void TakeDamage(int damage){
         health -= damage;
         print("здоровие игрока:" + health);
     
@@ -22,11 +22,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if (Ioput.GetMouseButtonDown(0))
+      if (Input.GetMouseButtonDown(0))
       {
-           Instant1ate(fireballprefab,
-     attackPoint,
-     position, attackpoint.
+           Instantiate(fireballprefab,
+     attackPoint.
+     position, attackPoint.
      rotation); 
 
       }

@@ -111392,7 +111392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4994892420620764, guid: ab24d77cc405e044493411195981a52e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.09
+      value: 15.19
       objectReference: {fileID: 0}
     - target: {fileID: 4994892420620764, guid: ab24d77cc405e044493411195981a52e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -151927,6 +151927,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireballprefab: {fileID: 6580845098407584664, guid: a8f7c3e64b35a1e459858890451ef81b, type: 3}
   attackPoint: {fileID: 1216242132}
+--- !u!4 &1160697650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+  m_PrefabInstance: {fileID: 2089412993}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1162608572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -216861,7 +216866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  target: {fileID: 0}
+  target: {fileID: 1160697650}
   playtDamage: 2
 --- !u!1001 &1663304624
 PrefabInstance:

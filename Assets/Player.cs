@@ -2,18 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player : MonoBehaviour
-{
+
+{ 
     public GameObject fireballprefab;
     public Transform attackPoint;
 
+    //объект,отвечаший за проигрование звука
+    public AudioSource audioSource;
+
+    //звуковой файл, содержаюший звук урона
+    public AudioClip damageSound;
+    
     //здоровие игрока
     private int health = 10;
 
     //метод понижаюший здоровие
     public void TakeDamage(int damage){
-        health -= damage;
-        print("здоровие игрока:" + health);
+         health -= damage;
+         if(health > 0)
+        {
+          audioSource.PlayOneShot(damageSound);
+        }
+         else
+        {
+            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(sceneIndex);
+        }
+
     
     
     }
